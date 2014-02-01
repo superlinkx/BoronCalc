@@ -1,0 +1,60 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Roboto", "Open Sans", sans-serif;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+img {
+	margin: 50px auto;
+}
+
+.button-group-life, .button-group-poison {
+	display: block;
+	position: absolute;
+	top: 15px;
+}
+
+.button-group-life {
+	left: 0;
+}
+
+.button-group-poison {
+	right: 0;
+}
+
+.button-group-vert {
+	display: inline-block;
+}
+
+.button-group-vert button {
+	font-size: 16px;
+	display: block;
+	width: 44px;
+	height: 40px;
+	margin: 5px 1px;
+}
+
+.life-counter {
+	position: relative;
+	width: 80%;
+	min-width: 360px;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.life-counter {}
+
+
+.display-life {
+	font-size: 80px;
+}
+
+.display-poison {
+	font-size: 40px;
+}
