@@ -39,34 +39,42 @@ var lifeFactory = function(startlife) {
 	life.life = startlife;
 	life.poison = startpoison;
 	//Life events
-	$(".button-group-life .plus-one").on("tap click", function(){
+	$(".button-group-life .plus-one").on("click", function(){
 		life.lifeTotal(1, "plus");
+		return false;
 	});
-	$(".button-group-life .minus-one").on("tap click", function(){
+	$(".button-group-life .minus-one").on("click", function(){
 		life.lifeTotal(1, "minus");
+		return false;
 	});
-	$(".button-group-life .plus-five").on("tap click", function(){
+	$(".button-group-life .plus-five").on("click", function(){
 		life.lifeTotal(5, "plus");
+		return false;
 	});
-	$(".button-group-life .minus-five").on("tap click", function(){
+	$(".button-group-life .minus-five").on("click", function(){
 		life.lifeTotal(5, "minus");
+		return false;
 	});
 	//Poison events
-	$(".button-group-poison .plus-one").on("tap click", function(){
+	$(".button-group-poison .plus-one").on("click", function(){
 		life.poisonTotal(1, "plus");
+		return false;
 	});
-	$(".button-group-poison .minus-one").on("tap click", function(){
+	$(".button-group-poison .minus-one").on("click", function(){
 		life.poisonTotal(1, "minus");
+		return false;
 	});
-	$(".button-group-poison .plus-five").on("tap click", function(){
+	$(".button-group-poison .plus-five").on("click", function(){
 		life.poisonTotal(5, "plus");
+		return false;
 	});
-	$(".button-group-poison .minus-five").on("tap click", function(){
+	$(".button-group-poison .minus-five").on("click", function(){
 		life.poisonTotal(5, "minus");
+		return false;
 	});
 }
 
 $(function(){
-	//FastClick.attach(document.body);
+	FastClick.attach(document.body);
 	var Life = lifeFactory(20);
 });

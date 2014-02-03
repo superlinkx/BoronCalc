@@ -32,12 +32,22 @@ img {
 	display: inline-block;
 }
 
-.button-group-vert button {
+.button-group-vert a {
 	font-size: 16px;
 	display: block;
 	width: 44px;
 	height: 40px;
+	line-height: 40px;
 	margin: 5px 1px;
+	background: #c8c8c8;
+	border: 2px outset #dbdbdb;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.button-group-vert a:active {
+	border: 2px inset #dbdbdb;
 }
 
 .life-counter {
