@@ -5,8 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path, that will be used to resolve files and exclude
-    basePath: '',
-
+    basePath: './',
 
     // frameworks to use
     frameworks: ['jasmine'],
@@ -14,6 +13,9 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'js/lib/angular.min.js',
+      'js/lib/angular-mocks.js',
+      'js/lib/angular-*.min.js',
       'js/*.js',
       'tests/**/*Spec.js'
     ],
@@ -21,7 +23,7 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-      
+      'js/background.js'
     ],
 
 
