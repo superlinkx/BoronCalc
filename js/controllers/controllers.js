@@ -13,3 +13,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */
+
+var boroncalcControllers = angular.module('boroncalcControllers', ['ngRoute']);
+
+boroncalcControllers.controller('LifeCounterCtrl', ['$scope',
+	function($scope) {
+		$scope.life = 20;
+		$scope.poison = 0;
+	}
+]);
