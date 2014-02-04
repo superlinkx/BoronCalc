@@ -30,40 +30,38 @@ img {
 	margin: 50px auto;
 }
 
-.button-group-life, .button-group-poison {
+.button-group.life, .button-group.poison {
 	display: block;
 	position: absolute;
 	top: 15px;
 }
 
-.button-group-life {
+.button-group.life {
 	left: 0;
 }
 
-.button-group-poison {
+.button-group.poison {
 	right: 0;
 }
 
-.button-group-vert {
+.button-group.vert {
 	display: inline-block;
 }
 
-.button-group-vert a {
-	font-size: 16px;
+.button-group.vert button {
 	display: block;
 	width: 44px;
-	height: 40px;
-	line-height: 40px;
 	margin: 5px 1px;
-	background: #c8c8c8;
-	border: 2px outset #dbdbdb;
-	cursor: pointer;
-	-webkit-user-select: none;
-	user-select: none;
 }
 
-.button-group-vert a:active {
-	border: 2px inset #dbdbdb;
+.button-group.reset {
+	margin-top: 50px;
+}
+
+.button-group button {
+	font-size: 16px;
+	width: 80px;
+	height: 40px;
 }
 
 .life-counter {

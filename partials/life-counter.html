@@ -15,15 +15,15 @@ limitations under the License.
 -->
 <section class="life-counter">
 	<h1>Life Counter</h1>
-	<div class="button-group-life">
+	<div class="button-group life">
 		<h2>Life</h2>
-		<div class="button-group-vert">
-			<a ng-click="changeLife(1)">+1</a>
-			<a ng-click="changeLife(-1)">-1</a>
+		<div class="button-group vert">
+			<button ng-click="changeLife(1)">+1</button>
+			<button ng-click="changeLife(-1)">-1</button>
 		</div>
-		<div class="button-group-vert">
-			<a ng-click="changeLife(5)">+5</a>
-			<a ng-click="changeLife(-5)">-5</a>
+		<div class="button-group vert">
+			<button ng-click="changeLife(5)">+5</button>
+			<button ng-click="changeLife(-5)">-5</button>
 		</div>
 	</div>
 	<div class="display-life">
@@ -32,15 +32,18 @@ limitations under the License.
 	<div class="display-poison">
 		<span>{{poison}}</span>
 	</div>
-	<div class="button-group-poison">
+	<div class="button-group poison">
 		<h2>Poison</h2>
-		<div class="button-group-vert">
-			<a ng-click="changePoison(1)">+1</a>
-			<a ng-click="changePoison(-1)">-1</a>
+		<div class="button-group vert">
+			<button ng-click="changePoison(1)">+1</button>
+			<button ng-click="changePoison(-1)">-1</button>
 		</div>
-		<div class="button-group-vert">
-			<a ng-click="changePoison(5)">+5</a>
-			<a ng-click="changePoison(-5)">-5</a>
+		<div class="button-group vert">
+			<button ng-click="changePoison(5)">+5</button>
+			<button ng-click="changePoison(-5)">-5</button>
 		</div>
+	</div>
+	<div class="button-group reset">
+		<button ng-click="reset()">Reset</button>
 	</div>
 </section>

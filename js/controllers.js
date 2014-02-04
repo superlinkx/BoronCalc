@@ -18,8 +18,10 @@ var boroncalcControllers = angular.module('boroncalcControllers', ['ngRoute']);
 
 boroncalcControllers.controller('LifeCounterCtrl', ['$scope',
 	function($scope) {
-		$scope.life = 20;
-		$scope.poison = 0;
+		$scope.defaultLife = 20;
+		$scope.defaultPoison = 0;
+		$scope.life = $scope.defaultLife;
+		$scope.poison = $scope.defaultPoison;
 
 		$scope.changeLife = function(amount) { //Changes life total by amount. amount is an integer
 			$scope.life += amount;
@@ -27,6 +29,11 @@ boroncalcControllers.controller('LifeCounterCtrl', ['$scope',
 
 		$scope.changePoison = function(amount) { //Changes poison counters by amount. amount is an integer
 			$scope.poison += amount;
+		}
+
+		$scope.reset = function() { //Reset life counter to current defaults
+			$scope.life = $scope.defaultLife;
+			$scope.poison = $scope.defaultPoison;
 		}
 	}
 ]);
