@@ -20,5 +20,13 @@ boroncalcControllers.controller('LifeCounterCtrl', ['$scope',
 	function($scope) {
 		$scope.life = 20;
 		$scope.poison = 0;
+
+		$scope.changeLife = function(amount) { //Changes life total by amount. amount is an integer
+			$scope.life += amount;
+		}
+
+		$scope.changePoison = function(amount) { //Changes poison counters by amount. amount is an integer
+			$scope.poison += amount;
+		}
 	}
 ]);
